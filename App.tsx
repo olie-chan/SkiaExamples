@@ -1,10 +1,11 @@
 import React from 'react';
+import {StyleSheet} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import {RootStackNavigator} from './navigation';
-import {CardPerspective} from './screens/CardPerspective';
+import {CreditCardPerspective} from './screens/CreditCardPerspective';
 import {Home} from './screens/Home';
-import {StyleSheet} from 'react-native';
+import {Neumorphism} from './screens/Neumorphism';
 
 export default function App() {
   return (
@@ -14,8 +15,12 @@ export default function App() {
           <RootStackNavigator.Screen name="Home" component={Home} />
           <RootStackNavigator.Group>
             <RootStackNavigator.Screen
-              name="CardPerspective"
-              component={CardPerspective}
+              name="CreditCardPerspective"
+              component={CreditCardPerspective}
+            />
+            <RootStackNavigator.Screen
+              name="Neumorphism"
+              component={Neumorphism}
             />
           </RootStackNavigator.Group>
         </RootStackNavigator.Navigator>

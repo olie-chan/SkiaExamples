@@ -17,7 +17,7 @@ const WIDTH = SCREEN_WIDTH * 0.9;
 const CARD_HEIGHT = HEIGHT - 5;
 const CARD_WIDTH = WIDTH - 5;
 
-export function CardPerspective() {
+export function CreditCardPerspective() {
   const rotateX = useSharedValue(0);
   const rotateY = useSharedValue(0);
   const gesture = Gesture.Pan()

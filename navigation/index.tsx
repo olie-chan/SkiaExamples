@@ -6,7 +6,8 @@ import {
 
 type RootStack = {
   Home: undefined;
-  CardPerspective: undefined;
+  CreditCardPerspective: undefined;
+  Neumorphism: undefined;
 };
 export const RootStackNavigator = createNativeStackNavigator<RootStack>();
 
