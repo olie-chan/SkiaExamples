@@ -8,15 +8,10 @@ export function Home() {
   return (
     <View style={styles.container}>
       <TouchableOpacity
-        style={{borderWidth: 1, borderColor: 'black', padding: 12}}
+        style={styles.card}
         onPress={() => navigate('CardPerspective')}>
-        <Text
-          style={{
-            fontSize: 16,
-          }}>
-          Card Perspective
-          <Icon name="stepforward" size={30} color="black" />
-        </Text>
+        <Text style={styles.cardText}>Card Perspective</Text>
+        <Icon name="right" size={24} color="black" />
       </TouchableOpacity>
     </View>
   );
@@ -25,7 +20,19 @@ export function Home() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
+    padding: 12,
     backgroundColor: 'white',
+  },
+  card: {
+    borderWidth: 1,
+    borderColor: 'black',
+    borderRadius: 12,
+    padding: 12,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  cardText: {
+    fontSize: 16,
   },
 });
