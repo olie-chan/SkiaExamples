@@ -14,6 +14,11 @@ export function Home() {
       />
       <Spacer />
       <Card text="Neumorphism" onPress={() => navigate('Neumorphism')} />
+      <Spacer />
+      <Card
+        text="Multi Option Button"
+        onPress={() => navigate('MultiOptionButton')}
+      />
     </View>
   );
 }
