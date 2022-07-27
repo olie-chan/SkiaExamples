@@ -19,6 +19,10 @@ export function Home() {
         text="Multi Option Button"
         onPress={() => navigate('MultiOptionButton')}
       />
+      <Spacer />
+      <Card text="Switcher" onPress={() => navigate('Switcher')} />
+      <Spacer />
+      <Card text="DVDs" onPress={() => navigate('DVDs')} />
     </View>
   );
 }

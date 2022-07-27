@@ -9,6 +9,8 @@ type RootStack = {
   CreditCardPerspective: undefined;
   Neumorphism: undefined;
   MultiOptionButton: undefined;
+  Switcher: undefined;
+  DVDs: undefined;
 };
 export const RootStackNavigator = createNativeStackNavigator<RootStack>();
 
