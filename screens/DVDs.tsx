@@ -65,17 +65,7 @@ export function DVDs() {
 
   return (
     <View style={styles.container}>
-      <Animated.View
-        style={[
-          {
-            width: ICON_SIZE,
-            height: ICON_SIZE,
-            position: 'absolute',
-            top: 0,
-            left: 0,
-          },
-          rStyle,
-        ]}>
+      <Animated.View style={[styles.iconContainer, rStyle]}>
         <DVDIcon fill={color} />
       </Animated.View>
     </View>
@@ -86,5 +76,12 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: 'black',
     flex: 1,
+  },
+  iconContainer: {
+    width: ICON_SIZE,
+    height: ICON_SIZE,
+    position: 'absolute',
+    top: 0,
+    left: 0,
   },
 });
